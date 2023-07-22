@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTMarketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--ХЕДЕР НАВ БАР-->
+    <nav class="nav-bar container">
+        <!-- НАВИГАЦИОННОЕ МЕНЮ -->
+        <ul class="nav-bar__menu">
+            <li class="nav-bar__link text"><a href="#hero">Marketplace</a></li>
+            <li class="nav-bar__link text"><a href="#amazing">Artists</a></li>
+            <li class="nav-bar__link text"><a href="#create">Community</a></li>
+            <li class="nav-bar__link text"><a href="#popular">Collections</a></li>
+        </ul>
+        <!-- КНОПКА КОНТАКТА -->
+        <div class="nav-bar__cta button">
+            <div class="nav-bar__contact">
+                <p class="text-bold">Contact</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ПЕРВАЯ СЕКЦИЯ ХИРО -->
+    <section id="hero" class="hero container">
+        <img src="img/spot1.png" alt="" class="hero__spot1 spot">
+        <img src="img/spot2.png" alt="" class="hero__spot2 spot">
+        <!-- ЛЕВАЯ ЧАСТЬ ПЕРВОЙ СЕКЦИИ -->
+        <div class="hero__content">
+            <!-- ЗАГОЛОВОК + ТЕКСТ + ДВЕ КНОПКИ -->
+            <div class="hero__main-content">
+                <h1 class="hero__title title">
+                    Discover and <br> Collect The Best <br> NFTs
+                    <span class="span__yellow">Digital Art.</span>
+                </h1>
+                <p class="hero__text text">
+                    Get started with the easiest and most secure platform to buy and trade <br> digital ART and NFT's. Start exploring the world of digital art and NFTs <br> today and take control of your digital assets with confidence!
+                </p>
+                <div class="hero__buttons">
+                    <div class="hero__primary-cta button">
+                        <p class="text-bold">Explore Now</p>
+                    </div>
+                    <div class="hero__learn-more">
+                        <a href="#" class="text-bold">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- СТАТИСТИКА ПЕРВОЙ СЕКЦИИ -->
+            <ul class="hero__stats">
+                <li class="hero__stats-point title">
+                    <p class="hero__stats-title"><span class="span__yellow">8.9</span>K</p>
+                    <p class="hero__stats-text text">Art work</p>
+                </li>
+                <li class="hero__stats-point title">
+                    <p class="hero__stats-title"><span class="hero__span span__yellow">65</span>K</p>
+                    <p class="hero__stats-text text">Artists</p>
+                </li>
+                <li class="hero__stats-point title">
+                    <p class="hero__stats-title"><span class="span__yellow">87</span>K</p>
+                    <p class="hero__stats-text text">Collection</p>
+                </li>
+            </ul>
+        </div>
+        <!-- ПРАВАЯ ЧАСТЬ ПЕРВОЙ СЕКЦИИ -->
+        <div class="hero__bid">
+            <!-- КАРТИНКА С ДЕВУШКОЙ -->
+            <img class="hero__girl-nft" src="img/hero.png" alt="girl">
+            <!-- ОКНО С АКЦИЕЙ -->
+            <div class="hero__place-a-bid top-shadow">
+                <div class="hero__numbers">
+                    <div class="hero__ends-in">
+                        <span class="hero__ends-in-text span__yellow">Ends in</span>
+                        <p class="text">05:45:47</p>
+                    </div>
+                    <div class="hero__current-bid">
+                        <span class="hero__current-bid-text span__yellow">Current bid</span>
+                        <p class="text">0.24ETH</p>
+                    </div>
+                </div>
+                <!-- КНОПКА -->
+                <div class="hero__place-a-bid-button stroke">
+                    <span class="span__yellow">Place A Bid</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ВТОРАЯ СЕКЦИЯ С КАРТОЧКАМИ -->
+    <section id="amazing" class="amazing container">
+        <img src="img/spot3.png" alt="" class="amazing__spot3 spot">
+        <div class="amazing__top">
+            <h2 class="amazing__title title">
+                <span class="span__yellow">Amazing</span> and Super <br> Unique Art of This <span class="span__yellow">Week</span>
+            </h2>
+            <div class="amazing__see-all button">
+                <p class="amazing__button-text text-bold">See All</p>
+            </div>
+        </div>
+        <!-- БЛОК С КАРТОЧКАМИ -->
+        <div class="amazing__cards cards">
+            <!-- ПЕРВАЯ КАРТОЧКА -->
+            <div class="amazing__card card top-shadow">
+                <img src="img/card1.png" alt="" class="amazing__card-image">
+                <div class="amazing__card-name-price">
+                    <p class="amazing__card-name text-bold">Cyberpunk Cocomo</p>
+                    <div class="amazing__card-price">
+                        <img src="icons/eth.svg" alt="Etherium">
+                        <p class="amazing__card-price-text text-bold">490ETH</p>
+                    </div>
+                </div>
+                <div class="amazing__card-ending-button">
+                    <div class="amazing__card-ending">
+                        <p class="amazing__card-ending-text text">
+                            Ending In
+                        </p>
+                        <div class="amazing__card-time">
+                            <img src="icons/clock.svg" alt="clock" class="amazing__clock">
+                            <p class="amazing__card-ending-time text-bold">
+                                03:24:56
+                            </p>
+                        </div>
+                    </div>
+                    <div class="amazing__card-button stroke">
+                        <p class="amazing__button-text text">Place a Bid</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ВТОРАЯ КАРТОЧКА -->
+            <div class="amazing__card card top-shadow">
+                <img src="img/card2.png" alt="" class="amazing__card-image">
+                <div class="amazing__card-name-price">
+                    <p class="amazing__card-name text-bold">Charge, Qi tiao yu</p>
+                    <div class="amazing__card-price">
+                        <img src="icons/eth.svg" alt="Etherium">
+                        <p class="amazing__card-price-text text-bold">490ETH</p>
+                    </div>
+                </div>
+                <div class="amazing__card-ending-button">
+                    <div class="amazing__card-ending">
+                        <p class="amazing__card-ending-text text">
+                            Ending In
+                        </p>
+                        <div class="amazing__card-time">
+                            <img src="icons/clock.svg" alt="clock" class="amazing__clock">
+                            <p class="amazing__card-ending-time text-bold">
+                                03:24:56
+                            </p>
+                        </div>
+                    </div>
+                    <div class="amazing__card-button stroke">
+                        <p class="amazing__button-text text">Place a Bid</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ТРЕТЬЯ КАРТОЧКА -->
+            <div class="amazing__card card top-shadow">
+                <img src="img/card3.png" alt="" class="amazing__card-image">
+                <div class="amazing__card-name-price">
+                    <p class="amazing__card-name text-bold">Surgeon, Josh Rife</p>
+                    <div class="amazing__card-price">
+                        <img src="icons/eth.svg" alt="Etherium">
+                        <p class="amazing__card-price-text text-bold">490ETH</p>
+                    </div>
+                </div>
+                <div class="amazing__card-ending-button">
+                    <div class="amazing__card-ending">
+                        <p class="amazing__card-ending-text text">
+                            Ending In
+                        </p>
+                        <div class="amazing__card-time">
+                            <img src="icons/clock.svg" alt="clock" class="amazing__clock">
+                            <p class="amazing__card-ending-time text-bold">
+                                03:24:56
+                            </p>
+                        </div>
+                    </div>
+                    <div class="amazing__card-button stroke">
+                        <p class="amazing__button-text text">Place a Bid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="create" class="create container">
+        <img src="img/spot4.png" alt="" class="create__spot4 spot">
+        <img src="img/spot5.png" alt="" class="create__spot5 spot">
+        <div class="create__content">
+            <!-- ЗАГОЛОВОК + ТЕКСТ + ДВЕ КНОПКИ -->
+            <div class="create__main-content">
+                <h1 class="create__title title">
+                    Create And Sell <br> Your <span class="span__yellow">Best NFTs</span>
+                </h1>
+                <p class="create__text text">
+                    Start exploring the world of digital art and NFTs today <br> and take control of your digital assets with confidence!
+                </p>
+                <div class="create__buttons">
+                    <div class="create__primary-cta button">
+                        <p class="text-bold">Explore Now</p>
+                    </div>
+                    <div class="create__learn-more">
+                        <a href="#" class="text-bold">Learn More</a>-bold
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create__images">
+            <img src="img/girl.png" alt="" class="create__girl">
+            <img src="img/fox.png" alt="" class="create__fox">
+        </div>
+    </section>
+
+    <section id="popular" class="popular container">
+        <div class="popular__top">
+            <h3 class="popular__title title">
+                Popular <span class="span__yellow">Artists</span><br> On This Week
+            </h3>
+            <div class="popular__see-all button">
+                <p class="popular__button-text text-bold">See All</p>
+            </div>
+        </div>
+        <div class="popular__images">
+            <div class="popular__four-img">
+                <div class="popular__top-img">
+                    <div class="popular__img1 img">
+                        <div class="popular__owner1 owner">
+                            <img src="img/avatar1.png" alt="" class="popular__avatar">
+                            <div class="popular__owner-text">
+                                <p class="popular__owner-word text owner-word">Owner</p>
+                                <p class="popular__owner-name text-bold">Osvaldo Percy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__img2 img">
+                        <div class="popular__owner2 owner">
+                            <img src="img/avatar2.png" alt="" class="popular__avatar">
+                            <div class="popular__owner-text">
+                                <p class="popular__owner-word text owner-word">Owner</p>
+                                <p class="popular__owner-name text-bold">Ranson Sqiure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__bot-img">
+                    <div class="popular__img3 img">
+                        <div class="popular__owner3 owner">
+                            <img src="img/avatar3.png" alt="" class="popular__avatar">
+                                <div class="popular__owner-text">
+                                    <p class="popular__owner-word text owner-word">Owner</p>
+                                    <p class="popular__owner-name text-bold">Sebastian waltan</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="popular__img4 img">
+                        <div class="popular__owner4 owner">
+                            <img src="img/avatar4.png" alt="" class="popular__avatar">
+                            <div class="popular__owner-text">
+                                <p class="popular__owner-word text owner-word">Owner</p>
+                                <p class="popular__owner-name text-bold">Abraham Zack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular__img5 img">
+                <div class="popular__owner5 owner">
+                    <img src="img/avatar5.png" alt="" class="popular__avatar">
+                    <div class="popular__owner-text">
+                        <p class="popular__owner-word text owner-word">Owner</p>
+                        <p class="popular__owner-name text-bold">Cristio leo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe" class="subscribe container">
+        <img src="img/spot6.png" alt="" class="subscribe__spot6 spot">
+        <div class="subscribe__images">
+            <img src="img/sub-nft1.png" alt="the-nft" class="subscribe__nft1">
+            <img src="img/sub-nft2.png" alt="the-nft" class="subscribe__nft2">
+        </div>
+        <div class="subscribe__content">
+            <h1 class="subscribe__title title">
+                Subscribe And <span class="span__yellow">get our <br> Updates</span> Every Week
+            </h1>
+            <p class="subscribe__text text">
+                We have a blog related to NFT so we can share thoughts and <br> routines on our blog which is updated weekly
+            </p>
+            <div class="subscribe__email-form">
+                <input type="email" class="subscribe__email-input text" placeholder="Enter your e-mail">
+                <button type="submit" class="subscribe__submit-button text-bold">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <div class="footer__top">
+            <div class="footer__content">
+                <p class="footer__text text">
+                    Discover NFTs by category, track <br> the latest drop, and follow the <br> collections you love. Enjoy it!
+                </p>
+                <div class="footer__social-media">
+                    <a class="footer__social" href="#"><img src="icons/facebook.svg" alt="social"></a>
+                    <a class="footer__social" href="#"><img src="icons/telegram.svg" alt="social"></a>
+                    <a class="footer__social" href="#"><img src="icons/twitter.svg" alt="social"></a>
+                    <a class="footer__social" href="#"><img src="icons/in.svg" alt="social"></a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <div class="footer__column">
+                    <p class="footer__column-name text-bold">Explore</p>
+                    <a href="" class="footer__link text">Art Sign In</a>
+                    <a href="" class="footer__link text">Collectibles</a>
+                    <a href="" class="footer__link text">Domain name</a>
+                    <a href="" class="footer__link text">Utility</a>
+                </div>
+                <div class="footer__column text">
+                    <p class="footer__column-name text-bold">Statistic</p>
+                    <a href="" class="footer__link text">Ranking</a>
+                    <a href="" class="footer__link text">Collectibles</a>
+                    <a href="" class="footer__link text">Activity</a>
+                </div>
+                <div class="footer__column text">
+                    <p class="footer__column-name text-bold">Company</p>
+                    <a href="" class="footer__link text">About us</a>
+                    <a href="" class="footer__link text">Career</a>
+                    <a href="" class="footer__link text">Support</a>
+                    <a href="" class="footer__link text">Partners</a>
+                </div>
+                <div class="footer__column text">
+                    <p class="footer__column-name text-bold">Resources</p>
+                    <a href="" class="footer__link text">Help Center</a>
+                    <a href="" class="footer__link text">Platform status</a>
+                    <a href="" class="footer__link text">Blog</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright-text text">© Copyright 2023 - davixq</p>
+            <div class="footer__copyright-links">
+                <a href="" class="footer__privacy text">Privacy Policy</a>
+                <a href="" class="footer__terms text">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

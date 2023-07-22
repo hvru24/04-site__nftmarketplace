@@ -1,0 +1,455 @@
+@import "resets.scss"
+@import "normalize2.scss"
+
+$yellow: #d6ef0e
+
+$blue: #131E3A
+$black: #1e1e1e
+$white: #ffffff
+$grey: #fffffd
+$dark-grey: #838382
+
+@font-face
+    font-family: "Canela"
+    src: url('../fonts/Canela-Medium-Trial.otf')
+    font-weight: medium
+    font-style: normal
+
+@font-face
+    font-family: "Inter"
+    src: url('../fonts/Inter-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face
+    font-family: "Inter"
+    src: url('../fonts/Inter-Bold.ttf')
+    font-weight: bold
+    font-style: normal
+
+*
+    box-sizing: border-box
+
+body
+    background-image: url(../img/background.png)
+    background-size: cover
+    background-repeat: no-repeat
+    overflow-x: hidden
+
+a
+    text-decoration: none
+    color: $white
+
+.spot
+    z-index: -5
+    position: absolute
+
+.top-shadow
+    box-shadow: 0px -1px 0.5px $yellow
+
+.stroke
+    border: 1px solid $yellow
+
+.span
+    &__yellow
+        color: $yellow
+
+.title
+    font-size: 48px
+    color: $white
+    line-height: 1.2
+    font-family: "Canela"
+    font-weight: medium
+
+.text
+    z-index: 5
+    font-size: 16px
+    color: $white
+    line-height: 1.6
+    font-family: "Inter"
+    font-weight: regular
+
+.text-bold
+    z-index: 5
+    font-size: 16px
+    color: $white
+    line-height: 1.6
+    font-family: "Inter"
+    font-weight: bold
+
+.button
+    z-index: 5
+    background-color: $yellow
+    border-radius: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.container
+    max-width: 1290px
+    margin: 0 auto
+    position: relative
+
+.nav-bar
+    min-height: 104px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 92px
+    &__menu
+        display: flex
+        flex-direction: row
+    &__link
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+        font-size: 16px
+        color: $white
+    &__cta
+        width: 143px
+        height: 48px
+    &__contact
+        a
+            font-size: 16px
+
+.hero
+    display: flex
+    flex-direction: row
+    padding-bottom: 92px
+    margin-bottom: 92px
+    &__spot1
+        top: -180px
+    &__spot2
+        top: 180px
+        left: 775px
+    &__content
+        width: 544px
+        height: 585px
+        margin-right: 231px
+    &__main-content
+        margin-bottom: 72px
+    &__title
+        margin-bottom: 20px
+        font-size: 64px
+    &__text
+        margin-bottom: 40px
+    &__buttons
+        display: flex
+        flex-direction: row
+    &__primary-cta
+        width: 178px
+        height: 52px
+        margin-right: 36px
+    &__learn-more
+        padding-top: 16.5px
+    &__stats
+        display: flex
+        flex-direction: row
+    &__stats-point
+        width: 128px
+        height: 92px
+        position: relative
+        padding-right: 1px
+        margin-right: 94px
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            width: 1px
+            height: 100%
+            background-color: $yellow
+        &:last-child
+            margin-right: 0
+    &__stats-title
+        margin-bottom: 8px
+    &__bid
+        position: relative
+    &__girl-nft
+    &__place-a-bid
+        background-color: $blue
+        border-radius: 16px
+        width: 304px
+        position: absolute
+        top: 468px
+        left: 211px
+        padding: 20px
+    &__numbers
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 24px
+    &__ends-in-text
+        display: block
+        margin-bottom: 8px
+    &__current-bid-text
+        display: block
+        margin-bottom: 8px
+    &__place-a-bid-button
+        width: 264px
+        height: 52px
+        border-radius: 8px
+        display: flex
+        justify-content: center
+        align-items: center
+
+.cards
+    display: flex
+    flex-direction: row
+
+.card
+    padding: 20px
+    border-radius: 28px
+    img
+        margin-bottom: 24px
+
+.amazing
+    padding-bottom: 92px
+    margin-bottom: 92px
+    &__spot3
+        top: 115px
+        left: 665px
+    &__top
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 64px
+    &__title
+    &__see-all
+        padding-left: 40px
+        padding-right: 40px
+        height: 52px
+        align-self: flex-end
+    &__card
+        width: 410px
+        background-color: $blue
+        margin-right: 30px
+        &:last-child
+            margin: 0
+    &__card-name-price
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 16px
+    &__card-price
+        display: flex
+        flex-direction: row
+    &__card-ending-button
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+    &__card-time
+        display: flex
+        flex-direction: row
+    &__clock
+        margin-right: 12px
+    &__card-name
+        font-size: 24px
+    &__card-ending-text
+        font-size: 14px
+        margin-bottom: 6.5px
+    &__card-ending-time
+        margin: 0 auto
+    &__card-button
+        width: 168px
+        height: 48px
+        border-radius: 8px
+        display: flex
+        justify-content: center
+        align-items: center
+
+.create
+    display: flex
+    flex-direction: row
+    padding-bottom: 368px
+    margin-bottom: 92px
+    &__spot4
+        top: 200px
+        left: 695px
+    &__spot5
+        top: 185px
+        left: -690px
+    &__content
+        width: 426px
+        height: 280px
+        margin-right: 124px
+    &__title
+        margin-bottom: 20px
+    &__text
+        margin-bottom: 40px
+    &__buttons
+        display: flex
+        flex-direction: row
+    &__primary-cta
+        width: 178px
+        height: 52px
+        margin-right: 36px
+    &__learn-more
+        padding-top: 16.5px
+    &__girl
+        position: absolute
+        top: 159px
+        left: 550px
+        z-index: 1
+    &__fox
+        position: absolute
+        top: 0px
+        left: 880px
+
+.popular
+    margin-bottom: 92px
+    &__top
+        padding-right: 31.5px
+        padding-left: 31.5px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 64px
+    &__see-all
+        padding-left: 40px
+        padding-right: 40px
+        height: 52px
+        align-self: flex-end
+    &__images
+        display: flex
+        flex-direction: row
+    &__four-img
+        margin-right: 30px
+    &__top-img
+        display: flex
+        flex-direction: row
+        margin-bottom: 30px
+    &__bot-img
+        display: flex
+        flex-direction: row
+    &__img1
+        width: 300px
+        height: 311px
+        background-image: url(../img/owner1.png)
+        margin-right: 30px
+    &__img2
+        width: 520px
+        height: 311px
+        background-image: url(../img/owner2.png)
+    &__img3
+        width: 410px
+        height: 311px
+        background-image: url(../img/owner3.png)
+        margin-right: 30px
+    &__img4
+        width: 410px
+        height: 311px
+        background-image: url(../img/owner4.png)
+    &__img5
+        width: 410px
+        height: 652px
+        background-image: url(../img/owner5.png)
+    &__avatar
+        margin-right: 12px
+        width: 48px
+        height: 48px
+
+.img
+    display: flex
+    align-items: flex-end
+
+.owner
+    display: flex
+    flex-direction: row
+    padding-bottom: 24px
+    padding-left: 24px
+
+.owner-word
+    padding-top: 1.5px
+    margin-bottom: 4px
+    font-size: 14px
+    color: $white
+
+.subscribe
+    display: flex
+    flex-direction: row
+    padding-bottom: 92px
+    margin-bottom: 92px
+    &__spot6
+        top: -465px
+        left: -550px
+    &__images
+        position: relative
+    &__nft2
+        position: absolute
+        top: 110px
+        left: 348px
+    &__content
+        margin-left: auto
+    &__title
+        margin-bottom: 20px
+    &__text
+        margin-bottom: 40px
+    &__email-form
+        display: inline-block
+        padding: 4px
+        background-color: $blue
+        border-radius: 8px
+    &__email-input
+        border: none
+        outline: none
+        padding: 8px
+        border-radius: 4px
+        background-color: $blue
+        color: $white
+        width: 352px
+    &__submit-button
+        border: none
+        outline: none
+        padding: 12px 40px
+        border-radius: 8px
+        background-color: $yellow
+        color: $white
+        cursor: pointer
+
+.footer
+    padding-bottom: 92px
+    &__top
+        position: relative
+        display: flex
+        flex-direction: row
+        padding-bottom: 48px
+        margin-bottom: 48px
+        &::after
+            content: ""
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background-color: $dark-grey
+    &__text
+        margin-bottom: 24px
+    &__social
+        margin-right: 12px
+        &:last-child
+            margin: 0
+    &__links
+        display: flex
+        flex-direction: row
+        margin-left: auto
+    &__column
+        display: flex
+        flex-direction: column
+        margin-right: 94px
+        &:last-child
+            margin: 0
+    &__column-name
+        margin-bottom: 24px
+        font-size: 20px
+    &__link
+        margin-bottom: 8px
+    &__hr
+        margin-bottom: 48px
+    &__copyright
+        display: flex
+        flex-direction: row
+    &__copyright-links
+        margin-left: auto
+    &__privacy
+        margin-right: 28px
